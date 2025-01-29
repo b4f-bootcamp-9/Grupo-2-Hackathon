@@ -4,6 +4,7 @@ import dayGridPlugin from "@fullcalendar/daygrid"; // Exibe o calendário em gra
 import timeGridPlugin from "@fullcalendar/timegrid"; // Adiciona a visualização em grade de tempo
 import interactionPlugin from "@fullcalendar/interaction"; // Permite interações no calendário
 import "../Styles/Calendario.css";
+import ptLocale from "@fullcalendar/core/locales/pt";
 
 export function Calendario() {
   const [events, setEvents] = useState([]); // Estado para armazenar eventos
@@ -29,10 +30,11 @@ export function Calendario() {
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]} // Plugins necessários
         initialView="dayGridMonth" // Exibição inicial
         editable={true} // Permite arrastar eventos
-        selectable={true} // Permite selecionar datas
+        selectable = {true} // Permite selecionar datas
         events={events} // Lista de eventos
         dateClick={handleDateClick} // Adiciona eventos ao clicar em uma data
         id="calendario"
+        locale={ptLocale}//
       />
     </div>
   );

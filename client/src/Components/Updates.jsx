@@ -2,10 +2,10 @@ import "../Styles/Updates.css";
 export function Updates() {
   return (
     <div className="updates-container">
-      <h1>Atualizações</h1>
-      <input type="text" 
+      <h1 className="text">Atualizações</h1>
+      <input className="Update-box" type="text" 
            id="readOnlyTextBox" 
-           readonly 
+           
            value="Ultima Atualização">
       </input>
     </div>

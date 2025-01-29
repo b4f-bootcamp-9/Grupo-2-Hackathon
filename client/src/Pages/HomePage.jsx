@@ -8,7 +8,12 @@ import { Updates } from "../Components/Updates";
 
 export function HomePage() {
   return (
-    <div className="homepage-container">
+    <div >
+      <div className="Header">
+      <img src="./login.svg" alt="Logo" width="60" height="60"/>
+        
+      </div>
+<div className="homepage-content">
       <div>
         <Reservas />
       </div>
@@ -18,6 +23,7 @@ export function HomePage() {
       <div>
         <Updates />
       </div>
-    </div>
-  );
+      </div>
+    </div>
+  );
 }

@@ -32,6 +32,7 @@ export function Calendario() {
         selectable={true} // Permite selecionar datas
         events={events} // Lista de eventos
         dateClick={handleDateClick} // Adiciona eventos ao clicar em uma data
+        id="calendario"
       />
     </div>
   );

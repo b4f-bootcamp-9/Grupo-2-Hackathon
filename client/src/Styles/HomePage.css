@@ -1,5 +1,46 @@
-.homepage-container {
+.homepage-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #222222;
+}
+
+.Header {
+  background-image: linear-gradient(180deg, #CB904D, #222222);
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#Sintra {
+  margin-left: 7rem;
+}
+
+#Logout {
+  margin-right: 5rem;
+}
+
+.Footer{
+  background-image: linear-gradient(180deg, #222222, #CB904D);
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#anos{
+  margin-left: 7rem;
+}
+
+#sintraLogo{
+  margin-right: 7rem;
+}
+@media (max-width: 480px) {
+  .Header {
+    height: 4rem;
+    padding: 05px;
+}
 }

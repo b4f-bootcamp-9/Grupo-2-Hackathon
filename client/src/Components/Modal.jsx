@@ -29,7 +29,7 @@ export default function Modal({ onSave, onClose, date }) {
     };
 
     try {
-      const response = await fetch("http://localhost:3030/api/reservas", {
+      const response = await fetch("http://localhost:3080/api/reservas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

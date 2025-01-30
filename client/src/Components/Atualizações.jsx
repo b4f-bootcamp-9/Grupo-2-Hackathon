@@ -5,7 +5,7 @@ export function Updates() {
   const [reservasRecentes, setReservasRecentes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3030/api/reservas/recentes")
+    fetch("http://localhost:3080/api/reservas/recentes")
       .then((response) => response.json())
       .then((data) => {
         setReservasRecentes(data);

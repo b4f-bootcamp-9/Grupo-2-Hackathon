@@ -5,11 +5,8 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import bootstrapPlugin from "@fullcalendar/bootstrap";
 import "../Styles/Calendario.css";
-<<<<<<< HEAD
 import Modal from "./Modal";
 import EditModal from "./EditModal";
-=======
->>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 import ptLocale from "@fullcalendar/core/locales/pt";
 
 const getEventColor = (descricao) => {
@@ -34,7 +31,7 @@ export function Calendario({ filterDescription }) {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3030/api/reservas")
+    fetch("http://localhost:3080/api/reservas")
       .then((response) => response.json())
       .then((data) => {
         const formattedEvents = data.map((reserva) => ({
@@ -68,7 +65,7 @@ export function Calendario({ filterDescription }) {
     const { nome, descricao, hora } = eventData;
     const dataHora = `${selectedDate}T${hora}:00`;
 
-    fetch("http://localhost:3030/api/reservas", {
+    fetch("http://localhost:3080/api/reservas", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, descricao, dataHora }),
@@ -94,7 +91,7 @@ export function Calendario({ filterDescription }) {
   const handleUpdateEvent = (eventData) => {
     const { id, nome, descricao, dataHora } = eventData;
 
-    fetch(`http://localhost:3030/api/reservas/${id}`, {
+    fetch(`http://localhost:3080/api/reservas/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, descricao, dataHora }),
@@ -120,7 +117,7 @@ export function Calendario({ filterDescription }) {
   };
 
   const handleDeleteEvent = (id) => {
-    fetch(`http://localhost:3030/api/reservas/${id}`, {
+    fetch(`http://localhost:3080/api/reservas/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -149,7 +146,6 @@ export function Calendario({ filterDescription }) {
   return (
     <div className="calendario-container">
       <FullCalendar
-<<<<<<< HEAD
         plugins={[
           dayGridPlugin,
           timeGridPlugin,
@@ -171,16 +167,6 @@ export function Calendario({ filterDescription }) {
         }}
         buttonText={{ today: "Hoje", month: "Mês", week: "Semana", day: "Dia" }}
         themeSystem="bootstrap"
-=======
-        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]} // Plugins necessários
-        initialView="dayGridMonth" // Exibição inicial
-        editable={true} // Permite arrastar eventos
-        selectable = {true} // Permite selecionar datas
-        events={events} // Lista de eventos
-        dateClick={handleDateClick} // Adiciona eventos ao clicar em uma data
-        id="calendario"
-        locale={ptLocale}//
->>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
       />
 
       {showModal && (

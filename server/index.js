@@ -28,7 +28,7 @@ connectDB();
 app.use("/api/auth", authRoutes);
 app.use("/api/reservas", reservasRoutes);
 
-const PORT = process.env.PORT || 3030;
+const PORT = 3080;
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);

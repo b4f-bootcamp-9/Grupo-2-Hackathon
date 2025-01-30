@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "679ac38b6ba05fd2ed694db5"
+  },
+  "nome": "Lúcia",
+  "descricao": "Auditório",
+  "dataHora": {
+    "$date": "2025-01-24T13:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-30T00:10:51.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679ac3a86ba05fd2ed694dbc"
+  },
+  "nome": "Jorge",
+  "descricao": "Mesa de matraquilhos",
+  "dataHora": {
+    "$date": "2025-01-16T12:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-30T00:11:20.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679ac3c16ba05fd2ed694dc3"
+  },
+  "nome": "Luís",
+  "descricao": "Sala de reunião",
+  "dataHora": {
+    "$date": "2025-01-30T11:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-30T00:11:45.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679ac3ce6ba05fd2ed694dca"
+  },
+  "nome": "Tiago",
+  "descricao": "Campo de futebol",
+  "dataHora": {
+    "$date": "2025-01-13T08:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-30T00:11:58.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679b522b7afcc3f791d3fdd3"
+  },
+  "nome": "diogo",
+  "descricao": "Campo de futebol",
+  "dataHora": {
+    "$date": "2025-01-11T12:21:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-30T10:19:23.257Z"
+  },
+  "__v": 0
+}]

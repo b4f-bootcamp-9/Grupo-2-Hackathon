@@ -1,13 +1,30 @@
-
-
  fieldset{
   border: none;
   display: flex;
   flex-direction: column;
 }
 
-p{
-  color:orange
+.salas{
+  border: 2px solid #1c7bd3;
+  border-radius: 1rem;
+}
+
+.equipamento{
+  border: 2px solid #1c7bd3;
+  border-radius: 1rem;
+}
+
+.reservas-container {
+  padding: 40px;
+  background-color: #222222;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vw;
+  z-index: -1;
+  
+}
+
+.hr{
+  color:#1c7bd3
 }  
 .reservas-container {
   padding: 40px;
@@ -15,10 +32,36 @@ p{
   border-radius: 8px;
   box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
   height: 100vh;
-  text-align: center;
-  
 }
 
+.reservas-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reservas-section {
+  margin-bottom: 20px;
+}
+
+.h1-reservas{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top:2px;
+  background-color: #166bb9;
+  text-align: center;
+  border-radius:1rem;
+  padding-top: 1.5rem;
+}
+
+h2{
+  color: #ffffff;
+  margin-bottom:30px;
+  text-align: center;
+}
+
+label {
 .reservas-header {
   text-align: center;
   margin-bottom: 20px;
@@ -56,4 +99,33 @@ input[type="checkbox"] {
   margin: 5px 0;      
   width: 100%;    
   margin-top:40px;
+}
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: white
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+.linha-separacao {
+  height: 1px;         
+  background: #CB904D;    
+  margin: 5px 0;      
+  width: 100%;    
+  margin-top:40px;
+}
+.botao-limpar {
+  height: 2.5rem;
+  width: 8.75rem;
+  background-color: #166bb9;
+  border-radius: 1.5625rem;
+  border: none;
+  padding: 0.3125rem;
+  color: white;
+  margin-top: 0.625rem;
+  cursor: pointer;
+  margin-left: 3.5rem;
 }

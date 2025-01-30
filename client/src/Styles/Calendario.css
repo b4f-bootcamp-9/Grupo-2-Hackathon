@@ -13,18 +13,21 @@
 }
 
 .fc-header-toolbar {
-  background-color: #CB904D; 
-  border-bottom: 2px solid #784f20; 
-  color: #ffffff; 
+  background-color: #166bb9;
+  border-bottom: 2px solid #166bb9;
+  color: #ffffff;
   padding: 10px;
   border-radius: 1rem;
 }
 
-
-.fc-button, .fc-button-primary, .fc-button-group .fc-button, .fc-button.fc-today-button, .fc-button.fc-button-primary {
-  background-color: #373736 !important; 
+.fc-button,
+.fc-button-primary,
+.fc-button-group .fc-button,
+.fc-button.fc-today-button,
+.fc-button.fc-button-primary {
+  background-color: #373736 !important;
   border: none !important;
-  color: #ffffff !important; 
+  color: #ffffff !important;
   padding: 5px 10px !important;
   margin: 0 5px !important;
   cursor: pointer !important;
@@ -32,50 +35,105 @@
   transition: background-color 0.3s ease !important;
 }
 
-.fc-button:hover, .fc-button-primary:hover, .fc-button-group .fc-button:hover, .fc-button.fc-today-button:hover, .fc-button.fc-button-primary:hover {
-  background-color: #784f20 !important; 
+.fc-button:hover,
+.fc-button-primary:hover,
+.fc-button-group .fc-button:hover,
+.fc-button.fc-today-button:hover,
+.fc-button.fc-button-primary:hover {
+  background-color: #1abc9c !important;
 }
 
-.fc-button-primary:not(:disabled).fc-button-active, .fc-button-group .fc-button.fc-button-primary:not(:disabled).fc-button-active, .fc-button.fc-today-button.fc-button-primary:not(:disabled).fc-button-active {
-  background-color: #e74c3c !important; 
+.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button-group .fc-button.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button.fc-today-button.fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #e74c3c !important;
 }
-
 
 .fc-event {
-  background-color: #01d394 !important; 
-  color: #ffffff !important; 
+  color: #ffffff !important;
   border: none !important;
   padding: 5px !important;
   border-radius: 3px !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 .fc-event:hover {
-  background-color: #995100 !important; 
+  filter: brightness(0.9) !important;
 }
-
 
 .fc-day {
-  background-color: #ffffff !important; 
-  border: 1px solid #000000 !important; 
+  background-color: #ffffff !important;
+  border: 1px solid #bdc3c7 !important;
 }
-
 
 .fc-day:hover {
   background-color: #ecf0f1 !important;
 }
 
-@media (max-width: 480px) {
-  .calendario-container {
-    width: 100%;
-    height: auto;
-  }
+.fc-view > .fc-scrollgrid {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-
-@media (max-width: 1490px) {
-  .calendario-container {
-    width: 100%;
-    height: auto;
+/* Botões de navegação (anterior e seguinte) */
+.fc-prev-button,
+.fc-next-button {
+  background-color: #373736 !important; /* Mesma cor de fundo que os outros botões */
+  border: none !important;
+  color: #ffffff !important;
+  padding: 5px 10px !important;
+  margin: 0 5px !important;
+  cursor: pointer !important;
+  border-radius: 3px !important;
+  transition: background-color 0.3s ease !important;
+  font-size: 16px; /* Aumenta o tamanho da fonte para tornar mais legível */
 }
+
+/* Efeito de hover nos botões de navegação */
+.fc-prev-button:hover,
+.fc-next-button:hover {
+  background-color: #ff6f47; /* Cor ao passar o mouse */
+}
+
+/* Ícones nos botões de navegação */
+.fc-prev-button::before,
+.fc-next-button::before {
+  font-family: "FontAwesome"; /* FontAwesome para ícones */
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Estilo geral dos botões de visualização (Mês, Semana, Dia, etc.) */
+.fc-dayGridMonth-button,
+.fc-timeGridWeek-button,
+.fc-timeGridDay-button {
+  font-size: 16px; /* Tamanho maior */
+  background-color: #373736; /* Cor de fundo igual aos botões de navegação */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px 4px;
+}
+
+.fc-dayGridMonth-button:hover,
+.fc-timeGridWeek-button:hover,
+.fc-timeGridDay-button:hover {
+  background-color: #1abc9c; /* Cor ao passar o mouse */
+  cursor: pointer !important;
+}
+
+/* Estilo para o botão Hoje */
+.fc-today-button {
+  background-color: #373736 !important; /* Mesma cor de fundo que os outros botões */
+  border: none !important;
+  color: #ffffff !important;
+  padding: 5px 10px !important;
+  margin: 5px 20px !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.fc-today-button:hover {
+  background-color: #1abc9c !important; /* Cor ao passar o mouse */
 }

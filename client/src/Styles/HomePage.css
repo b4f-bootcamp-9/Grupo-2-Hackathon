@@ -1,12 +1,14 @@
+
 .homepage-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #222222;
+  margin: 0%;
 }
 
 .Header {
-  background-image: linear-gradient(180deg, #CB904D, #222222);
+  background-image: linear-gradient(180deg, #1c7bd3, #222222);
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -23,12 +25,13 @@
 }
 
 .Footer{
-  background-image: linear-gradient(180deg, #222222, #CB904D);
+  background-image: linear-gradient(180deg,#222222,#1c7bd3 );
   height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  position: relative;
 }
 
 #anos{
@@ -38,6 +41,18 @@
 #sintraLogo{
   margin-right: 7rem;
 }
+
+#Logout {
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Estilo quando o mouse passa por cima do ícone */
+#Logout:hover {
+  transform: rotate(180deg); /* Rotaciona a seta */
+  filter: brightness(1.2); /* Aumenta o brilho */
+}
+
 @media (max-width: 480px) {
   .Header {
     height: 4rem;

@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 .homepage-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #222222;
+<<<<<<< HEAD
   margin: 0%;
 }
 
@@ -12,10 +16,19 @@
   height: 8rem;
   display: flex;
   justify-content: space-between;
+=======
+}
+
+.Header {
+  background-image: linear-gradient(180deg, #CB904D, #222222);
+  height: 6.25rem;
+  display: flex;
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
   align-items: center;
   width: 100%;
 }
 
+<<<<<<< HEAD
 #Sintra {
   margin-left: 7rem;
 }
@@ -58,4 +71,9 @@
     height: 4rem;
     padding: 05px;
 }
+=======
+img{
+  justify-self: flex-end;
+ width:100%;
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 }

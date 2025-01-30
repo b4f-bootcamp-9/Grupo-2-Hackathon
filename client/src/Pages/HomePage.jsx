@@ -19,6 +19,7 @@ export function HomePage() {
   };
 
   return (
+<<<<<<< HEAD
     <div>
       <div className="Header">
         <img
@@ -36,6 +37,16 @@ export function HomePage() {
           id="Logout"
           onClick={handleLogout}
         />
+=======
+    <div >
+      <div className="Header">
+      <img src="./login.svg" alt="Logo" width="60" height="60"/>
+        
+      </div>
+<div className="homepage-content">
+      <div>
+        <Reservas />
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
       </div>
       <div className="homepage-content">
         <div>
@@ -64,6 +75,10 @@ export function HomePage() {
           id="sintraLogo"
         />
       </div>
+<<<<<<< HEAD
+=======
+      </div>
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
     </div>
   );
 }

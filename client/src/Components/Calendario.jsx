@@ -5,8 +5,11 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import bootstrapPlugin from "@fullcalendar/bootstrap";
 import "../Styles/Calendario.css";
+<<<<<<< HEAD
 import Modal from "./Modal";
 import EditModal from "./EditModal";
+=======
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 import ptLocale from "@fullcalendar/core/locales/pt";
 
 const getEventColor = (descricao) => {
@@ -146,6 +149,7 @@ export function Calendario({ filterDescription }) {
   return (
     <div className="calendario-container">
       <FullCalendar
+<<<<<<< HEAD
         plugins={[
           dayGridPlugin,
           timeGridPlugin,
@@ -167,6 +171,16 @@ export function Calendario({ filterDescription }) {
         }}
         buttonText={{ today: "Hoje", month: "Mês", week: "Semana", day: "Dia" }}
         themeSystem="bootstrap"
+=======
+        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]} // Plugins necessários
+        initialView="dayGridMonth" // Exibição inicial
+        editable={true} // Permite arrastar eventos
+        selectable = {true} // Permite selecionar datas
+        events={events} // Lista de eventos
+        dateClick={handleDateClick} // Adiciona eventos ao clicar em uma data
+        id="calendario"
+        locale={ptLocale}//
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
       />
 
       {showModal && (

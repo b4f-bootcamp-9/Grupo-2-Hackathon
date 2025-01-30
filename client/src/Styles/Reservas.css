@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
  fieldset{
   border: none;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 }
 
 .salas{
@@ -62,6 +68,22 @@ h2{
 }
 
 label {
+=======
+}
+
+p{
+  color:orange
+}  
+.reservas-container {
+  padding: 40px;
+  background-color: #222222;
+  border-radius: 8px;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  
+}
+
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 .reservas-header {
   text-align: center;
   margin-bottom: 20px;
@@ -99,6 +121,7 @@ input[type="checkbox"] {
   margin: 5px 0;      
   width: 100%;    
   margin-top:40px;
+<<<<<<< HEAD
 }
   align-items: center;
   margin: 10px 0;
@@ -128,4 +151,6 @@ input[type="checkbox"] {
   margin-top: 0.625rem;
   cursor: pointer;
   margin-left: 3.5rem;
+=======
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 }

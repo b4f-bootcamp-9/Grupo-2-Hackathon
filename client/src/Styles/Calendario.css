@@ -13,13 +13,20 @@
 }
 
 .fc-header-toolbar {
+<<<<<<< HEAD
   background-color: #166bb9;
   border-bottom: 2px solid #166bb9;
   color: #ffffff;
+=======
+  background-color: #CB904D; 
+  border-bottom: 2px solid #784f20; 
+  color: #ffffff; 
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
   padding: 10px;
   border-radius: 1rem;
 }
 
+<<<<<<< HEAD
 .fc-button,
 .fc-button-primary,
 .fc-button-group .fc-button,
@@ -28,6 +35,13 @@
   background-color: #373736 !important;
   border: none !important;
   color: #ffffff !important;
+=======
+
+.fc-button, .fc-button-primary, .fc-button-group .fc-button, .fc-button.fc-today-button, .fc-button.fc-button-primary {
+  background-color: #373736 !important; 
+  border: none !important;
+  color: #ffffff !important; 
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
   padding: 5px 10px !important;
   margin: 0 5px !important;
   cursor: pointer !important;
@@ -35,6 +49,7 @@
   transition: background-color 0.3s ease !important;
 }
 
+<<<<<<< HEAD
 .fc-button:hover,
 .fc-button-primary:hover,
 .fc-button-group .fc-button:hover,
@@ -136,4 +151,37 @@
 
 .fc-today-button:hover {
   background-color: #1abc9c !important; /* Cor ao passar o mouse */
+=======
+.fc-button:hover, .fc-button-primary:hover, .fc-button-group .fc-button:hover, .fc-button.fc-today-button:hover, .fc-button.fc-button-primary:hover {
+  background-color: #1abc9c !important; 
+}
+
+.fc-button-primary:not(:disabled).fc-button-active, .fc-button-group .fc-button.fc-button-primary:not(:disabled).fc-button-active, .fc-button.fc-today-button.fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #e74c3c !important; 
+}
+
+
+.fc-event {
+  background-color: #2ecc71 !important; 
+  color: #ffffff !important; 
+  border: none !important;
+  padding: 5px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.fc-event:hover {
+  background-color: #27ae60 !important; 
+}
+
+
+.fc-day {
+  background-color: #ffffff !important; 
+  border: 1px solid #bdc3c7 !important; 
+}
+
+
+.fc-day:hover {
+  background-color: #ecf0f1 !important;
+>>>>>>> 5307e5723f1936c9dd5602e637d9bec957eca005
 }
